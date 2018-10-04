@@ -1,5 +1,5 @@
 ---
-title: "cm008 Exercises"
+title: "cm010 Exercises"
 output: github_document
 ---
 
@@ -26,23 +26,35 @@ suppressPackageStartupMessages(library(nycflights13))
 ```
 
 ### left_join: Join matching rows from `b` to `a` by matching "x1" variable
+```{r}
+left_join(a, b, by="x1")
+```
 
 
 
 ### right_join: Join matching rows from `a` to `b` by matching "x1" variable.
+```{r}
+right_join(a, b, by="x1")
+```
 
 
 
 ### inner_join: Join data. Retain only rows in both sets `a` to `b` by matching "x1" variable.
+```{r}
+inner_join(a,b,by="x1")
+```
 
 
 
 ### full_join: Join data. Retain all values, all rows of `a` to `b` by matching "x1"
+```{r}
+full_join(a,b, by="x1")
+```
 
 
 
 ### what happen if we do not specify `by` option?
-
+It defaults to the first column
 
 
 ### what happen if we join two different variables (e.g., "x1" to "x3") from two tibbles `a` to `b`?
@@ -54,6 +66,7 @@ suppressPackageStartupMessages(library(nycflights13))
 ```{r}
 # make data frame c and use inner_join()
 (c <- tibble(x1 = c(LETTERS[1:2],"x"), x2 = c(1,4,5)))
+inner_join(a,c)
 ```
 
 ## In class practice
@@ -84,14 +97,24 @@ flights2 <- flights[1:1000,] %>%
 
 ```{r}
 # Which join function to use?
-
+colnames(airlines)
+colnames(flights2)
+left_join(flights2, airlines, by="carrier")
 ```
 
 ### 4. Add `weather` information to the `flights2` dataset by matching "year" and "time_hour" variables.
+```{r}
+flights2 %>%
+  left_join(weather, by= c("year", "time_hour"))
+```
 
 
 
 ### 5. Add `weather` information to the `flights2` dataset by matching only "time_hour" variable
+```{r}
+flights2 %>%
+  left_join(weather, by = c("time_hour"))
+```
 
 
 
@@ -161,6 +184,12 @@ Practice these concepts in the following exercises. It might help you to first i
 
 
 ### 1. Filter the rows of `flights2` by matching "year" and "time_hour" variables to `weather` dataset. Use both `semi_join()` and `anti_join()`
+```{r}
+flights2
+weather
+filtered <- flights2 %>%
+  semi_join(weather, by=c("year", "time_hour"))
+```
 
 
 
