@@ -170,10 +170,11 @@ flights2 %>%
 ### Let's bind datasets by rows or column using two binding functions:
 
 ### example for `bind_rows`: Append `z` to `y` as new rows
-
+Row binding appends both datasets together
 
 
 ### example for `bind_cols`: Append `z` to `y` as new columns. __Caution__: matches rows by position. Check colnames after binding.
+
 
 
 ### what happen if colnames are different between `y` and `x` datasets?
