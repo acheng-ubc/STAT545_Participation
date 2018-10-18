@@ -5,12 +5,12 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 ## Lecture Exercises
 | Lecture | Description |
 |------|--------------------------------------|
-| 3 | Data structures in R , R Markdown Syntax |
-| 5 | Intro to *dplyr* and *tidyverse* |
-| 6 | Basic plots in *ggplot2* |
-| 7 | Aesthetic mappings in *ggplot2* |
-| 8 | Datawrangling using *dplyr* |
-| 9 | Data reshaping and tidying in *dplyr* |
+| 03 | Data structures in R , R Markdown Syntax |
+| 05 | Intro to *dplyr* and *tidyverse* |
+| 06 | Basic plots in *ggplot2* |
+| 07 | Aesthetic mappings in *ggplot2* |
+| 08 | Datawrangling using *dplyr* |
+| 09 | Data reshaping and tidying in *dplyr* |
 | 10 | join() functions |
 | 11 | R as a programming language: the basics|
 | 12 | Working with factors in R | 
