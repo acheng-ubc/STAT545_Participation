@@ -1,8 +1,8 @@
-# STAT545A Participation Repository
+# STAT545A and STAT547M Participation Repository
 
-This repository contains completed worksheets for all lectures from STAT545A Winter 2018.
+This repository contains completed worksheets for all lectures from STAT545A Winter 2018, and ongoing worksheets for STAT547M.
 
-## Lecture Exercises
+## STAT545A Lecture Exercises
 | Lecture | Description |
 |------|--------------------------------------|
 | 03 | Data structures in R , R Markdown Syntax |
@@ -16,3 +16,8 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 | 12 | Working with factors in R | 
 | 13 | Making presentable figures in ggplot; interactivity with plotly |
 | 14 | Model fitting in R, easy presentation of results using *broom* |
+
+## STAT547  Lecture Exercises
+| Lecture | Description |
+|------|--------------------------------------|
+| 01 | Making and testing functions in R |
