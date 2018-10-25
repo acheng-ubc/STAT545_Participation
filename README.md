@@ -21,3 +21,4 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 | Lecture | Description |
 |------|--------------------------------------|
 | 01 | Making and testing functions in R |
+| 02 | Manipulating strings, Regular Expressions |
