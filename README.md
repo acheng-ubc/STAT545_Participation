@@ -22,3 +22,4 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 |------|--------------------------------------|
 | 01 | Making and testing functions in R |
 | 02 | Manipulating strings, Regular Expressions |
+| 03 | *purrr*, list-columns, and nested data frames |
