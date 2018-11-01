@@ -253,7 +253,9 @@ If time remains, here is a good exercise to put everything together.
 Let's give it a try:
 
 ```{r}
-
+iris %>%
+  group_by(Species) %>%
+  nest()
 ```
 
 
