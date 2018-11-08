@@ -5,6 +5,7 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 ## STAT545A Lecture Exercises
 | Lecture | Description |
 |------|--------------------------------------|
+| [01 and 02](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture01_02) | Exploring Github and Markdown |
 | [03](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture03) | Data structures in R , R Markdown Syntax |
 |[05](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture05) | Intro to *dplyr* and *tidyverse* |
 | [06](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture06) | Basic plots in *ggplot2* |
