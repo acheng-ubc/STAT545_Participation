@@ -5,17 +5,17 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 ## STAT545A Lecture Exercises
 | Lecture | Description |
 |------|--------------------------------------|
-| 03 | Data structures in R , R Markdown Syntax |
-| 05 | Intro to *dplyr* and *tidyverse* |
-| 06 | Basic plots in *ggplot2* |
-| 07 | Aesthetic mappings in *ggplot2* |
-| 08 | Datawrangling using *dplyr* |
-| 09 | Data reshaping and tidying in *dplyr* |
-| 10 | join() functions |
-| 11 | R as a programming language: the basics|
-| 12 | Working with factors in R | 
-| 13 | Making presentable figures in ggplot; interactivity with plotly |
-| 14 | Model fitting in R, easy presentation of results using *broom* |
+| [03](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture03) | Data structures in R , R Markdown Syntax |
+|[05](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture05) | Intro to *dplyr* and *tidyverse* |
+| [06](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture06) | Basic plots in *ggplot2* |
+| [07](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture07) | Aesthetic mappings in *ggplot2* |
+| [08](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture08) | Datawrangling using *dplyr* |
+| [09](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture09) | Data reshaping and tidying in *dplyr* |
+| [10](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture10) | join() functions |
+| [11](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture11) | R as a programming language: the basics|
+| [12](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture12) | Working with factors in R | 
+| [13](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture13) | Making presentable figures in ggplot; interactivity with plotly |
+| [14](https://github.com/acheng-ubc/STAT545_Participation/tree/master/Lecture14) | Model fitting in R, easy presentation of results using *broom* |
 
 ## STAT547  Lecture Exercises
 | Lecture | Description |
