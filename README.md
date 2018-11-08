@@ -20,6 +20,8 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 ## STAT547  Lecture Exercises
 | Lecture | Description |
 |------|--------------------------------------|
-| 01 | Making and testing functions in R |
-| 02 | Manipulating strings, Regular Expressions |
-| 03 | *purrr*, list-columns, and nested data frames |
+| [01](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture01) | Making and testing functions in R |
+| [02](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture02) | Manipulating strings, Regular Expressions |
+| [03](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture03) | *purrr*, list-columns, and nested data frames |
+| [04](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture04) | More on list-columns and operating on nested data frames |
+| [05 and 06](https://github.com/acheng-ubc/STAT545_Participation/tree/master/powers) | Intro to creating an [R package](http://stat545.com/Classroom/notes/cm105.nb.html) |
