@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(tidyverse)
 
 a <- 5
 print(a^2) # running the app will also load these variables
@@ -33,7 +34,11 @@ bcl <- read.csv("C:/Users/Kiko0/Desktop/git_docs/STAT545_Participation/shiny_lec
   titlePanel("BC Liquor price app", 
    windowTitle = "BCL app"),
   sidebarLayout(
-   sidebarPanel("This text is in the sidebar."),
+   sidebarPanel("This text is in the sidebar.",
+                sliderInput("priceInput", "Select your desired price range.",
+                            min = 0, max = 100, value = c(15, 30), pre="$"),
+                radioButtons("typeInput", "Select your desired beverage type.",
+                            choices = c("BEER", "REFRESHMENT", "SPIRITS", "WINE"))),
    mainPanel(
      plotOutput("price_hist"),
      tableOutput("bcl_data")
@@ -44,8 +49,12 @@ bcl <- read.csv("C:/Users/Kiko0/Desktop/git_docs/STAT545_Participation/shiny_lec
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  output$price_hist <- renderPlot(ggplot2::qplot(bcl$Price))
-  output$bcl_data <- renderTable(bcl)
+  output$price_hist <- renderPlot(bcl %>%
+                                    filter(Price > input$priceInput[1], Price < input$priceInput[2], Type == input$typeInput) %>%
+                                    ggplot(aes(Price)) +
+                                      geom_histogram())
+  output$bcl_data <- renderTable(bcl %>%
+                                   filter(Price > input$priceInput[1], Price < input$priceInput[2], Type == input$typeInput))
 }
 
 # Run the application 
