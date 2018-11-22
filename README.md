@@ -23,6 +23,9 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 |------|--------------------------------------|
 | [01](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture01) | Making and testing functions in R |
 | [02](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture02) | Manipulating strings, Regular Expressions |
-| [03](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture03) | *purrr*, list-columns, and nested data frames |
+| [03](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture03) | *purrr*, map functions, intro to list-columns|
 | [04](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture04) | More on list-columns and operating on nested data frames |
 | [05 and 06](https://github.com/acheng-ubc/STAT545_Participation/tree/master/powers) | Intro to creating an [R package](http://stat545.com/Classroom/notes/cm105.nb.html) |
+| [07 and 08](https://github.com/acheng-ubc/STAT545_Participation/tree/master/shiny_lecture) | Intro to Shiny and creating Shiny apps |
+| [09](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture09) | Automation of pipelines using make; examples |
+| [10](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture10) | Creating your own Makefiles |
