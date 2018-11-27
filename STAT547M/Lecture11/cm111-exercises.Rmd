@@ -1,0 +1,106 @@
+---
+title: "Untitled"
+author: "Alex"
+date: "November 27, 2018"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(rvest)
+```
+
+# Using rvest to read in parts of cm111-simple_script.html
+```{r}
+simple_page <- read_html(x = "cm111-exercises.Rmd")
+
+simple_page %>%
+  html_structure()
+
+# all text
+simple_page %>%
+  html_text()
+
+# just text in paragraphs
+simple_page %>%
+  html_nodes("p") %>%
+  html_text()
+
+# hyperlinks
+simple_page %>%
+  html_nodes("a") %>%
+  html_text()
+
+# custom tags e.g. #wiki
+simple_page %>%
+  html_nodes("#wiki") %>%
+  html_text()
+```
+
+
+# After CSS Minigame [(found here)](http://flukeout.github.io/)
+```{r}
+# all <a> tags within <p> tags
+simple_page %>%
+  html_nodes("p a") %>%
+  html_text()
+
+# any tags
+simple_page %>%
+  html_nodes("*") %>%
+  html_text()
+```
+
+# Reading tags
+```{r}
+# give names of all tags
+simple_page %>%
+  html_nodes("*") %>%
+  html_name()
+
+# give attributes of tags
+simple_page %>%
+  html_nodes("a") %>%
+  html_attrs()
+
+simple_page %>%
+  html_nodes("a") %>%
+  html_attr(name="href")
+
+tibble(
+  text = simple_page %>% html_nodes("a") %>% html_text(),
+  url = simple_page %>% html_nodes("a") %>% html_attr(name="href")
+)
+```
+
+# Extracting songs from [Kane Brown's page on musixmatch](https://www.musixmatch.com/search/kane%20brown)
+```{r}
+music <- read_html(x = "https://www.musixmatch.com/search/kane%20brown")
+
+music %>%
+  html_nodes(".media-card-title") %>%
+  html_text()
+```
+
+# Reading a Table from [Wikipedia's list of tallest steel roller coasters](https://en.wikipedia.org/wiki/List_of_roller_coaster_rankings#Tallest_steel_roller_coasters)
+
+```{r}
+read_html("https://en.wikipedia.org/wiki/List_of_roller_coaster_rankings#Tallest_steel_roller_coasters")
+```
+
+# Data structures and Importing
+<!-- ```{r} -->
+<!-- fromJSON('{"city" : "Z\\u00FCrich"}') # A list -->
+<!-- fromJSON("https://api.github.com/users/hadley/orgs") %>%  -->
+<!--     glimpse() # A data frame -->
+<!-- toJSON(mtcars, pretty=TRUE) -->
+<!-- ``` -->
+
+
+
+
+
