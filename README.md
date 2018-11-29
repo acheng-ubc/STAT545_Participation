@@ -29,3 +29,5 @@ This repository contains completed worksheets for all lectures from STAT545A Win
 | [07 and 08](https://github.com/acheng-ubc/STAT545_Participation/tree/master/shiny_lecture) | Intro to Shiny and creating Shiny apps |
 | [09](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture09) | Automation of pipelines using make; examples |
 | [10](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture10) | Creating your own Makefiles |
+| [11](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture11) | Getting data from the internet: `rvest`, CSS, json |
+| [12](https://github.com/acheng-ubc/STAT545_Participation/tree/master/STAT547M/Lecture12) | Getting data from the internet: APIs and HTTP |
